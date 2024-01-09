@@ -30,8 +30,4 @@
     <OutputPath>..\Build\Telegramm_task\Release\</OutputPath>
   </PropertyGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="xcopy $(SolutionDir)token.txt /Y $(TargetDir)" />
-  </Target>
-
 </Project>
